@@ -206,7 +206,7 @@ h4 {
     flex-direction: column;
     align-items: stretch;
     justify-content: stretch;
-    padding: 3.2rem 0 3.2rem 3.2rem; }
+    padding: 3.2rem; }
     @media (min-width: 1200px) {
       .nav__container {
         flex-direction: row; } }
@@ -227,7 +227,7 @@ h4 {
         @media (min-width: 1200px) {
           .nav__container-side h3 {
             width: auto;
-            margin-right: none;
+            margin-right: 0;
             margin-bottom: 1.6rem;
             margin-left: 4.8rem; } }
       @media (min-width: 1200px) {
@@ -237,9 +237,9 @@ h4 {
           width: 20%;
           border-left: 2px solid #bdbdbd;
           flex-direction: column;
-          padding: none;
+          padding: 0;
           border-top: none;
-          margin-top: none; } }
+          margin-top: 0; } }
   .nav__logo {
     width: 28%; }
   .nav__block {
@@ -286,7 +286,7 @@ h4 {
       @media (min-width: 1200px) {
         .nav__side-link-list li {
           display: block;
-          margin-right: none; } }
+          margin-right: 0; } }
   .nav hr {
     margin: 0 20%;
     text-align: center;

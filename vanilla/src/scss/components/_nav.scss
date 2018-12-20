@@ -23,7 +23,7 @@
         flex-direction: column;
         align-items: stretch;
         justify-content: stretch;
-        padding: $spacer-medium 0 $spacer-medium $spacer-medium;
+        padding: $spacer-medium;
 
         @include for-desktop-up {
             flex-direction: row;
@@ -50,7 +50,7 @@
 
                 @include for-desktop-up {
                     width: auto;
-                    margin-right: none;
+                    margin-right: 0;
                     margin-bottom: $spacer-small;
                     margin-left: $spacer-large;
                 }
@@ -62,9 +62,9 @@
                 width: 20%;
                 border-left: 2px solid $color-grey-medium;
                 flex-direction: column;
-                padding: none;
+                padding: 0;
                 border-top: none;
-                margin-top: none;
+                margin-top: 0;
             }
         }
     }
@@ -133,7 +133,7 @@
 
             @include for-desktop-up {
                 display: block;
-                margin-right: none;
+                margin-right: 0;
             }
         }
     }
