@@ -1,0 +1,29 @@
+{
+  "title": "Responsive Nav Example",
+  "navLists": [
+    {
+      "headline": "Headline #1",
+      "links": [
+          "first link",
+          "second nav link",
+          "third nav link"
+      ]
+    },
+    {
+      "headline": "Long Headline",
+      "links": [
+          "first link",
+          "second nav link",
+          "third nav link"
+      ]
+    },
+    {
+      "headline": "Headline #3",
+      "links": [
+          "first link",
+          "second nav link",
+          "third nav link"
+      ]
+    }
+  ]
+}

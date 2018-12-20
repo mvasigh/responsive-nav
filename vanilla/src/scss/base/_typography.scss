@@ -1,0 +1,34 @@
+body {
+  font-size: 1.8rem;
+  font-family: $font-body;
+  font-weight: 400;
+  color: $color-grey-dark;
+}
+
+p {
+  line-height: 2.3rem;
+}
+
+a:link,
+a:visited {
+  color: inherit;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $font-heading;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: $color-black;
+}

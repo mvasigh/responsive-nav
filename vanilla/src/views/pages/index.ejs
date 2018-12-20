@@ -1,0 +1,77 @@
+<% include ../partials/_header %>
+
+<header class="header"></header>
+
+<!--
+
+    I was not really able to implement a fully responsive design without spending
+    too much time on this, but hopefully you get the idea. I structured my markup
+    to support both the desktop and mobile designs. I've also intentionally committed
+    the public dir so that you can see the HTML/CSS output. If I were to complete
+    the mobile design, here's how I'd do it:
+
+    - I split the nav into two flex containers: main and side. `main` houses the link
+      blocks and logo/title/summary, and `side` holds the "More Links" section. This
+      allows me to move `side` around to create space as needed across breakpoints
+
+    - With this approach, I'm able to break `side` down to the bottom of the layout
+      instead of the side between phone and 1440px breakpoints to free up width for
+      the main links by changing `flex-direction` on the main `nav__container`
+
+    - At the mobile breakpoint, I would flip `nav__container` back to row, and switch
+      `main` to `flex-direction: column` to accomodate the new vertical alignment
+
+    - I didn't really account for the position of the icons, but it would make sense
+      to wrap the icon and headline in a flex container, as they switch between 'row'
+      and 'column', which I didn't do, but looking back, I should have.
+
+ -->
+
+<nav class="nav">
+    <a href="#" class="nav__close-button pull-right mr-sm"> &#10005; </a>
+    <div class="nav__container">
+        <div class="nav__container-main">
+            <div class="nav__logo">
+                <div class="nav__icon-container">
+                    <div class="sq-icon sq-icon--lg">
+                        <span>company logo</span>
+                    </div>
+                </div>
+                <h1 class="nav__block-headline mt-sm mb-sm">Website Name</h1>
+                <hr />
+                <p class="nav__block-description mt-sm">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Cumque illo, expedita quod maiores architecto cupiditate
+                    deleniti? Optio, fuga possimus.
+                </p>
+            </div>
+            <% navLists.forEach(list => { %>
+            <div class="nav__block">
+                <div class="nav__icon-container">
+                    <div class="sq-icon"><span>icon</span></div>
+                </div>
+                <h2 class="nav__block-headline mt-sm mb-sm">
+                    <%= list.headline %>
+                </h2>
+                <hr />
+                <ul class="nav__block-link-list mt-sm">
+                    <li><a href="#">first nav link</a></li>
+                    <li><a href="#">second nav link</a></li>
+                    <li><a href="#">third nav link</a></li>
+                </ul>
+            </div>
+            <% }) %>
+        </div>
+        <div class="nav__container-side">
+            <h3>More Links</h3>
+            <ul class="nav__side-link-list">
+                <li><a href="#">first nav link</a></li>
+                <li><a href="#">second long link</a></li>
+                <li><a href="#">third link</a></li>
+                <li><a href="#">fourth</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<% include ../partials/_footer %>

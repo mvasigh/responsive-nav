@@ -1,0 +1,28 @@
+{
+    "name": "responsive-nav",
+    "version": "1.0.0",
+    "description": "Responsive nav example",
+    "scripts": {
+        "build:css": "node-sass ./src/scss/main.scss ./public/css/style.css",
+        "build:js": "browserify ./src/js/main.js -o ./public/js/script.js -t [ babelify --presets [ \"babel-preset-env\" ] ]",
+        "build:html": "ejs-cli --base-dir src/views/pages/ \"*.ejs\" --out public/ --options ./site.config.json",
+        "build": "npm run build:js && npm run build:css && npm run build:html",
+        "build:watch": "watch \"npm run build\" ./src",
+        "serve": "live-server ./public",
+        "dev": "run-p build:watch serve"
+    },
+    "author": "Mehdi Vasigh",
+    "license": "MIT",
+    "devDependencies": {
+        "babel-core": "^6.26.3",
+        "babel-preset-env": "^1.7.0",
+        "babelify": "^8.0.0",
+        "browserify": "^16.2.3",
+        "ejs-cli": "^2.0.1",
+        "live-server": "^1.2.1",
+        "node-sass": "^4.11.0",
+        "npm-run-all": "^4.1.5",
+        "parallelshell": "^3.0.2",
+        "watch": "^1.0.2"
+    }
+}
