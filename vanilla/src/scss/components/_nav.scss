@@ -14,6 +14,8 @@
 
     &__close-button {
         font-size: 2.4rem;
+        position: absolute;
+        right: $spacer-small;
     }
 
     &__container {
@@ -127,9 +129,11 @@
             color: $color-grey-dark;
             line-height: 2.2;
             display: inline;
+            margin-right: $spacer-small;
 
             @include for-desktop-up {
                 display: block;
+                margin-right: none;
             }
         }
     }

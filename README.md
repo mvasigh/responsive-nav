@@ -2,7 +2,7 @@
 
 Responsive nav layout example using static site generator from my portfolio website. Explanation of code in comments in `index.html` and throughout.
 
-[View live react site](https://responsive-nav.firebaseapp.com/)
+[View live site](https://responsive-nav-vanilla.firebaseapp.com/)
 
 To run vanilla:
 

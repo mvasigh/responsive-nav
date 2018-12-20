@@ -198,7 +198,9 @@ h4 {
       margin: 1.6rem auto;
       max-width: 1408px; } }
   .nav__close-button {
-    font-size: 2.4rem; }
+    font-size: 2.4rem;
+    position: absolute;
+    right: 1.6rem; }
   .nav__container {
     display: flex;
     flex-direction: column;
@@ -279,10 +281,12 @@ h4 {
       overflow: hidden;
       color: #424242;
       line-height: 2.2;
-      display: inline; }
+      display: inline;
+      margin-right: 1.6rem; }
       @media (min-width: 1200px) {
         .nav__side-link-list li {
-          display: block; } }
+          display: block;
+          margin-right: none; } }
   .nav hr {
     margin: 0 20%;
     text-align: center;
