@@ -1,6 +1,6 @@
 # responsive-nav
 
-Responsive nav layout example using static site generator from my portfolio website. Explanation of code in comments. 
+Responsive nav layout example using static site generator from my portfolio website. Explanation of code in comments in `index.html` and throughout. 
 
 To run vanilla:
 
