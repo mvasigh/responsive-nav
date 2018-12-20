@@ -6,6 +6,7 @@ To run vanilla:
 
 ```sh
 cd vanilla
+npm install
 npm run dev
 ```
 
@@ -13,5 +14,6 @@ To run react:
 
 ```sh
 cd react-app
+npm install
 npm run start
 ```
